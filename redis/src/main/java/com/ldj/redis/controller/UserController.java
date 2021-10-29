@@ -16,6 +16,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    // 测试提交
     @RequestMapping("/login")
     public String login(
             @RequestParam("userName") final String userName,
@@ -33,7 +34,7 @@ public class UserController {
             if (null == user) {
                 return userService.loginValidate(userName);
             } else {
-                return "登录成功1";
+                return "登录成功";
             }
         }
 
