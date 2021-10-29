@@ -33,7 +33,7 @@ public class UserController {
             if (null == user) {
                 return userService.loginValidate(userName);
             } else {
-                return "登录成功";
+                return "登录成功1";
             }
         }
 
